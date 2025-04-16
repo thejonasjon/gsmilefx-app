@@ -2,39 +2,42 @@ import { useState, useRef } from "react";
 import { motion } from "framer-motion";
 import { ChevronLeft, ChevronRight, Star } from "lucide-react";
 
+import profilePhotoPlacholder from "../assets/images/testimonials-profile-photo-placeholder.jpg"
+
 export default function Testimonials() {
   const [activeIndex, setActiveIndex] = useState(0);
   const testimonialsRef = useRef(null);
 
   const testimonials = [
     {
-      name: "Sarah Johnson",
+      name: "Adeyomi Daniel",
       role: "Forex Trader, Basic to Elite Package",
-      image: "/placeholder.svg?height=100&width=100",
+      // image: "../assets/images/testimonials-profile-photo-placeholder.jpg?height=100&width=100",
+      image: "",
       content:
         "The mentorship program at GsmileFX completely transformed my trading. I went from inconsistent results to a structured approach that delivers steady profits. The personalized guidance was exactly what I needed.",
       rating: 5,
     },
     {
-      name: "Michael Chen",
+      name: "Michael Okorokwo",
       role: "Crypto Trader, Premium Package",
-      image: "/placeholder.svg?height=100&width=100",
+      image: "",
       content:
         "The technical analysis training helped me identify high-probability setups I was missing before. My win rate has improved dramatically since joining. The supply and demand strategy changed everything for me.",
       rating: 5,
     },
     {
-      name: "Jessica Williams",
+      name: "Blessing Williams",
       role: "Stock Trader, VIP Package",
-      image: "/placeholder.svg?height=100&width=100",
+      image: "",
       content:
         "The 1-on-1 coaching sessions were invaluable. Having an experienced mentor review my trades and provide personalized feedback accelerated my growth tremendously. I'm now consistently profitable.",
       rating: 5,
     },
     {
-      name: "David Rodriguez",
+      name: "Jonas Jon",
       role: "Forex Trader, Elite Package",
-      image: "/placeholder.svg?height=100&width=100",
+      image: "",
       content:
         "After trying multiple trading courses, GsmileFX was the only one that delivered real results. The mentors don't just teach theory - they show you exactly how to apply strategies in real market conditions.",
       rating: 5,
@@ -114,7 +117,7 @@ export default function Testimonials() {
                     <div className="flex items-center justify-center">
                       <div className="relative h-16 w-16 rounded-full overflow-hidden border-2 border-green-500">
                         <img
-                          src={testimonial.image || "/placeholder.svg"}
+                          src={testimonial.image || profilePhotoPlacholder}
                           alt={testimonial.name}
                           className="object-cover w-full h-full"
                         />
