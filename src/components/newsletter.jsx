@@ -55,7 +55,7 @@ export default function Newsletter() {
 
             <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
               <Input
-                className="flex-1 bg-gray-800/50 border-gray-700 text-white focus:border-green-500 focus:ring-green-500 h-12 rounded-full px-6"
+                className="flex-1 bg-gray-800/50 border-gray-700 text-white focus:border-green-500 focus:ring-green-500 h-12 rounded-4xl px-6"
                 placeholder="Enter your email"
                 type="email"
                 value={email}

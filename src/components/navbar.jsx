@@ -3,6 +3,8 @@ import { Link } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 import { Button } from "../components/ui/button";
 
+import GsmileFLogo from '/logo/gsmile_logo_white.png'
+
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -28,7 +30,7 @@ export default function Navbar() {
         <Link to="/" className="flex items-center gap-2 z-50">
           <div className="relative h-10 w-32">
             <img
-              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/gsmile%20logo_greenxblack-xnnULAgBmfC69qyZt3JDCnBZqZzyQb.png"
+              src={GsmileFLogo}
               alt="GsmileFX Logo"
               style={{ objectFit: "contain", filter: "brightness(0) invert(1)" }}
             />

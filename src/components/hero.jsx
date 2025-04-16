@@ -133,7 +133,7 @@ export default function Hero() {
               <Button
                 size="lg"
                 variant="outline"
-                className="border-green-500/50 text-green-500 hover:bg-green-500/10 rounded-full px-8 h-14 text-lg font-medium"
+                className="bg-gradient-to-r from-gray-100 to-gray-300 hover:bg-transparent hover:from-transparent hover:to-transparent hover:border hover:border-green-500/50 text-green-500 hover:text-gray-100 rounded-full px-8 h-14 text-lg font-medium"
               >
                 Explore Programs
               </Button>

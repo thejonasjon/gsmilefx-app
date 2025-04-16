@@ -1,5 +1,6 @@
 import { Facebook, Twitter, Instagram, Linkedin, ArrowUp } from "lucide-react";
 import { Link } from "react-router-dom";
+import GsmileFLogo from '/logo/gsmile_logo_white.png'
 
 export default function Footer() {
   return (
@@ -15,7 +16,7 @@ export default function Footer() {
           <div className="space-y-6">
             <div className="relative h-12 w-36">
               <img
-                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/gsmile%20logo_greenxblack-xnnULAgBmfC69qyZt3JDCnBZqZzyQb.png"
+                src={GsmileFLogo}
                 alt="GsmileFX Logo"
                 className="object-contain brightness-0 invert"
               />
@@ -60,22 +61,22 @@ export default function Footer() {
             <ul className="space-y-3">
               <li>
                 <Link to="#" className="text-gray-400 hover:text-green-500 transition-colors">
-                  Technical Analysis
+                  Forex Trading Class
                 </Link>
               </li>
               <li>
                 <Link to="#" className="text-gray-400 hover:text-green-500 transition-colors">
-                  Group Mentorship
+                1-on-1 Mentorship
                 </Link>
               </li>
               <li>
                 <Link to="#" className="text-gray-400 hover:text-green-500 transition-colors">
-                  1-on-1 Coaching
+                  Account Management
                 </Link>
               </li>
               <li>
                 <Link to="#" className="text-gray-400 hover:text-green-500 transition-colors">
-                  Trading Psychology
+                  Trading Psychology | Tips
                 </Link>
               </li>
             </ul>
@@ -110,16 +111,16 @@ export default function Footer() {
           <div className="space-y-4">
             <h3 className="text-lg font-bold text-white">Contact</h3>
             <ul className="space-y-3">
-              <li className="text-gray-400">123 Trading Street</li>
-              <li className="text-gray-400">New York, NY 10001</li>
+              <li className="text-gray-400">47, Babalola Street,</li>
+              <li className="text-gray-400">Lagos, Nigeria 100211</li>
               <li className="text-gray-400">info@gsmilefx.com</li>
-              <li className="text-gray-400">+1 (555) 123-4567</li>
+              <li className="text-gray-400">+234 7038250033</li>
             </ul>
           </div>
         </div>
 
         <div className="mt-16 pt-8 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center">
-          <p className="text-gray-400 text-sm">© {new Date().getFullYear()} GsmileFX. All rights reserved.</p>
+          <p className="text-gray-400 text-sm">&COPY; {new Date().getFullYear()} Gsmile Inc. All rights reserved.</p>
           <div className="flex space-x-6 mt-4 md:mt-0">
             <Link to="#" className="text-gray-400 hover:text-green-500 transition-colors text-sm">
               Privacy Policy
