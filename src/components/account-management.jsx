@@ -33,7 +33,7 @@ export default function AccountManagement() {
   ];
 
   return (
-    <section className="relative w-full py-24 bg-gradient-to-b from-black to-gray-900 text-white overflow-hidden">
+    <section id="accountManagement" className="relative w-full py-24 bg-gradient-to-b from-black to-gray-900 text-white overflow-hidden">
       {/* Animated background */}
       <div className="absolute inset-0 z-0">
         <div className="absolute inset-0 opacity-10">

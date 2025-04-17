@@ -89,7 +89,7 @@ export default function PricingPlans() {
   ];
 
   return (
-    <section className="relative w-full py-24 bg-black text-white overflow-hidden">
+    <section id="pricing" className="relative w-full py-24 bg-black text-white overflow-hidden">
       {/* Animated background */}
       <div className="absolute inset-0 z-0">
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(0,200,83,0.1),transparent_70%)]"></div>

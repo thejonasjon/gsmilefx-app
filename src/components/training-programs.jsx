@@ -53,7 +53,7 @@ export default function TrainingPrograms() {
   ]
 
   return (
-    <section className="relative w-full py-24 bg-black text-white overflow-hidden">
+    <section id="training" className="relative w-full py-24 bg-black text-white overflow-hidden">
       {/* Background elements */}
       <div className="absolute inset-0 z-0">
         <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-green-500/50 to-transparent"></div>

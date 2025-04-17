@@ -56,7 +56,7 @@ export default function Mentorship() {
   ];
 
   return (
-    <section
+    <section id="mentorship"
       ref={containerRef}
       className="relative w-full py-24 bg-gradient-to-b from-gray-900 to-black text-white overflow-hidden"
     >

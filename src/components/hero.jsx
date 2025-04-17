@@ -102,13 +102,13 @@ export default function Hero() {
       <div className="container relative z-10 flex flex-col items-center justify-center min-h-screen px-4 py-20 mx-auto">
         <div className="grid gap-12 md:grid-cols-2 items-center">
           <div className="flex flex-col space-y-8 text-center md:text-left order-2 md:order-1">
-            <div className="inline-flex items-center px-4 py-2 space-x-2 text-sm bg-gradient-to-r from-green-500/20 to-green-500/10 rounded-full backdrop-blur-sm border border-green-500/20 w-fit mx-auto md:mx-0">
+            {/* <div className="inline-flex items-center px-4 py-2 space-x-2 text-sm bg-gradient-to-r from-green-500/20 to-green-500/10 rounded-full backdrop-blur-sm border border-green-500/20 w-fit mx-auto md:mx-0">
               <span className="relative flex h-3 w-3">
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
                 <span className="relative inline-flex rounded-full h-3 w-3 bg-green-500"></span>
               </span>
               <span>Elite Forex Training</span>
-            </div>
+            </div> */}
 
             <h1 className="text-5xl md:text-7xl font-extrabold tracking-tight">
               <span className="block text-transparent bg-clip-text bg-gradient-to-r from-green-300 via-green-500 to-green-700">

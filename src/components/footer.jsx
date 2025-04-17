@@ -1,4 +1,6 @@
-import { Facebook, Twitter, Instagram, Linkedin, ArrowUp } from "lucide-react";
+import { Facebook, Twitter, Instagram, Linkedin, ArrowUp, X } from "lucide-react";
+import { FaTiktok } from 'react-icons/fa'
+
 import { Link } from "react-router-dom";
 import GsmileFLogo from '/logo/gsmile_logo_white.png'
 
@@ -25,34 +27,46 @@ export default function Footer() {
               Expert trading training and mentorship to help you succeed in the financial markets.
             </p>
             <div className="flex space-x-4">
-              <Link
-                to="#"
+              <a
+                href="https://www.facebook.com/profile.php?id=61559718954837"
                 className="p-2 rounded-full bg-gray-800 text-gray-400 hover:bg-green-500 hover:text-white transition-colors"
+                target="_blank"
               >
                 <Facebook className="h-5 w-5" />
                 <span className="sr-only">Facebook</span>
-              </Link>
-              <Link
-                to="#"
+              </a>
+              <a
+                href="https://www.tiktok.com/live/subscription/?enter_type=share&show_entrance=share_link&sec_anchor_id=MS4wLjABAAAA0_3B7EZ5xkRsZmyC0Wa-JAlv3wXuQ6EpH8hli3Ty8TNmmPtBhuuUTQ1eJdkaudH5&cover_url=&lang=en&ug_btm=b8727,b0&sec_user_id=MS4wLjABAAAA0_3B7EZ5xkRsZmyC0Wa-JAlv3wXuQ6EpH8hli3Ty8TNmmPtBhuuUTQ1eJdkaudH5&utm_source=copy&social_share_type=0&utm_campaign=client_share&utm_medium=ios&tt_from=copy&user_id=7341018576750806049&enable_checksum=1&share_link_id=0B1853FA-C767-4D35-9D9B-CE4B2D0D9596&share_app_id=1233"
                 className="p-2 rounded-full bg-gray-800 text-gray-400 hover:bg-green-500 hover:text-white transition-colors"
+                target="_blank"
+              >
+                <FaTiktok className="h-5 w-5" />
+                <span className="sr-only">Facebook</span>
+              </a>
+              <a
+                href="#"
+                className="p-2 rounded-full bg-gray-800 text-gray-400 hover:bg-green-500 hover:text-white transition-colors"
+                target="_blank"
               >
                 <Twitter className="h-5 w-5" />
                 <span className="sr-only">Twitter</span>
-              </Link>
-              <Link
-                to="#"
+              </a>
+              <a
+                href="https://www.instagram.com/gsmilefx?igsh=MW01NnhlaDVheHBtNQ=="
                 className="p-2 rounded-full bg-gray-800 text-gray-400 hover:bg-green-500 hover:text-white transition-colors"
+                target="_blank"
               >
                 <Instagram className="h-5 w-5" />
                 <span className="sr-only">Instagram</span>
-              </Link>
-              <Link
-                to="#"
+              </a>
+              {/* <a
+                href="#"
                 className="p-2 rounded-full bg-gray-800 text-gray-400 hover:bg-green-500 hover:text-white transition-colors"
+                target="_blank"
               >
                 <Linkedin className="h-5 w-5" />
                 <span className="sr-only">LinkedIn</span>
-              </Link>
+              </a> */}
             </div>
           </div>
 
@@ -60,17 +74,17 @@ export default function Footer() {
             <h3 className="text-lg font-bold text-white">Programs</h3>
             <ul className="space-y-3">
               <li>
-                <Link to="#" className="text-gray-400 hover:text-green-500 transition-colors">
+                <Link to="/#training" className="text-gray-400 hover:text-green-500 transition-colors">
                   Forex Trading Class
                 </Link>
               </li>
               <li>
-                <Link to="#" className="text-gray-400 hover:text-green-500 transition-colors">
+                <Link to="/#mentorship" className="text-gray-400 hover:text-green-500 transition-colors">
                 1-on-1 Mentorship
                 </Link>
               </li>
               <li>
-                <Link to="#" className="text-gray-400 hover:text-green-500 transition-colors">
+                <Link to="/#accountManagement" className="text-gray-400 hover:text-green-500 transition-colors">
                   Account Management
                 </Link>
               </li>
@@ -86,22 +100,22 @@ export default function Footer() {
             <h3 className="text-lg font-bold text-white">Company</h3>
             <ul className="space-y-3">
               <li>
-                <Link to="#" className="text-gray-400 hover:text-green-500 transition-colors">
+                <Link to="/about-us" className="text-gray-400 hover:text-green-500 transition-colors">
                   About Us
                 </Link>
               </li>
               <li>
-                <Link to="#" className="text-gray-400 hover:text-green-500 transition-colors">
+                <Link to="/team" className="text-gray-400 hover:text-green-500 transition-colors">
                   Our Team
                 </Link>
               </li>
               <li>
-                <Link to="#" className="text-gray-400 hover:text-green-500 transition-colors">
+                <Link to="/#testimonials" className="text-gray-400 hover:text-green-500 transition-colors">
                   Testimonials
                 </Link>
               </li>
               <li>
-                <Link to="#" className="text-gray-400 hover:text-green-500 transition-colors">
+                <Link to="/#Contact" className="text-gray-400 hover:text-green-500 transition-colors">
                   Contact
                 </Link>
               </li>
@@ -120,7 +134,7 @@ export default function Footer() {
         </div>
 
         <div className="mt-16 pt-8 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center">
-          <p className="text-gray-400 text-sm">&COPY; {new Date().getFullYear()} Gsmile Inc. All rights reserved.</p>
+          <p className="text-gray-400 text-sm">&copy; {new Date().getFullYear()} Gsmile Inc. All rights reserved.</p>
           <div className="flex space-x-6 mt-4 md:mt-0">
             <Link to="#" className="text-gray-400 hover:text-green-500 transition-colors text-sm">
               Privacy Policy

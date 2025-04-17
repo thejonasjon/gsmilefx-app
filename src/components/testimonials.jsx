@@ -53,7 +53,7 @@ export default function Testimonials() {
   };
 
   return (
-    <section className="relative w-full py-24 bg-gradient-to-b from-black to-gray-900 text-white overflow-hidden">
+    <section id="testimonials" className="relative w-full py-24 bg-gradient-to-b from-black to-gray-900 text-white overflow-hidden">
       {/* Animated background */}
       <div className="absolute inset-0 z-0">
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(0,200,83,0.1),transparent_70%)]"></div>
