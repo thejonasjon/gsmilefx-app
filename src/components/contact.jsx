@@ -119,7 +119,8 @@ export default function Contact() {
               </div>
               <div>
                 <h3 className="text-xl font-bold text-white mb-2">Call Us</h3>
-                <p className="text-gray-400">+234 7038250033</p>
+                <p className="text-gray-400">+234 703 825 0033</p>
+                <p className="text-gray-400">+234 704 064 5831</p>
               </div>
             </div>
 

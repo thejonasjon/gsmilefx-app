@@ -48,7 +48,7 @@ export default function AboutHero() {
           transition={{ duration: 0.5, delay: 0.2 }}
           className="text-xl text-gray-400 text-center max-w-2xl mb-10"
         >
-          Since 2015, GsmileFX has been on a mission to empower traders with the knowledge, strategies, and mentorship
+          Since 2020, GsmileFX has been on a mission to empower traders with the knowledge, strategies, and mentorship
           needed to succeed in the volatile world of forex trading.
         </motion.p>
       </div>

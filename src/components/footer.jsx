@@ -128,7 +128,8 @@ export default function Footer() {
               <li className="text-gray-400">47, Babalola Street,</li>
               <li className="text-gray-400">Lagos, Nigeria 100211</li>
               <li className="text-gray-400">info@gsmilefx.com</li>
-              <li className="text-gray-400">+234 7038250033</li>
+              <li className="text-gray-400">+234 703 825 0033</li>
+              <li className="text-gray-400">+234 704 064 5831</li>
             </ul>
           </div>
         </div>

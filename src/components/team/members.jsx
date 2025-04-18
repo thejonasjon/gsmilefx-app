@@ -9,21 +9,28 @@ export default function TeamMembers() {
       {
         name: "Godspower Ogaga S.",
         role: "Founder & CEO",
-        bio: "With over 15 years of forex trading experience...",
+        bio: "With over 5 years of forex trading experience...",
         image: "",
         social: { twitter: "#", facebook: "#", linkedin: "#" },
       },
       {
         name: "Godwin Ochigbo",
         role: "CTO",
-        bio: "Sarah brings 12 years of institutional trading experience...",
+        bio: "Godwin brings 6 years of institutional trading experience...",
         image: "",
         social: { twitter: "#", facebook: "#", linkedin: "#" },
       },
       {
         name: "Jonas John",
         role: "Head of IT",
-        bio: "Michael has a unique talent for breaking down complex trading concepts...",
+        bio: "Jonas has a unique talent for breaking down complex trading concepts...",
+        image: "",
+        social: { twitter: "#", facebook: "#", linkedin: "#" },
+      },
+      {
+        name: "Kayode John",
+        role: "Lead Brand | Digital Designer | Business Strategist",
+        bio: "Kayode has a unique talent for breaking down complex trading concepts...",
         image: "",
         social: { twitter: "#", facebook: "#", linkedin: "#" },
       },
@@ -168,7 +175,7 @@ export default function TeamMembers() {
                           <img src={member.image || profilePhotoPlacholder} alt={member.name} className="w-full h-full object-cover" />
                         </div>
                         <h3 className="text-xl font-bold text-white">{member.name}</h3>
-                        <p className="text-green-500">{member.role}</p>
+                        <p className="text-center text-green-500">{member.role}</p>
                         <div className="flex space-x-3 mt-3">
                           <a href={member.social.twitter} className="text-gray-400 hover:text-green-500 transition-colors">
                             <Twitter />
