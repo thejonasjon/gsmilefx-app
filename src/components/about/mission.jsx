@@ -7,27 +7,20 @@ export default function AboutMission() {
       title: "Our Mission",
       icon: Target,
       description:
-        "To democratize forex trading education and empower individuals with the knowledge, tools, and mentorship needed to achieve consistent profitability in the financial markets.",
+        "To empower a new generation of disciplined and profitable traders by transforming raw curiosity into beastly traders and skill into consistent money making — through hands-on mentorship, deep market insight, and a no-fluff, real-world approach to forex education.",
       color: "from-blue-500 to-blue-700",
     },
     {
       title: "Our Vision",
       icon: Lightbulb,
       description:
-        "To become the world's leading forex education platform, known for transforming novice traders into professional market participants through our innovative training methods and personalized mentorship.",
+        "To become most impactful and respected forex training institution globally — raising financially free individuals who trade with precision, confidence, and character in any market condition.",
       color: "from-green-500 to-green-700",
-    },
-    {
-      title: "Our Values",
-      icon: Users,
-      description:
-        "Integrity, transparency, excellence, and student success are at the core of everything we do. We believe in providing honest education that delivers real results for our community of traders.",
-      color: "from-purple-500 to-purple-700",
-    },
+    }
   ]
 
   return (
-    <section className="relative w-full py-24 bg-black text-white overflow-hidden">
+    <section className="relative w-full pt-24 pb-10 bg-black text-white overflow-hidden">
       {/* Animated background */}
       <div className="absolute inset-0 z-0">
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(0,200,83,0.05),transparent_70%)]"></div>
@@ -44,10 +37,10 @@ export default function AboutMission() {
             <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
             <span className="relative inline-flex rounded-full h-3 w-3 bg-green-500"></span>
           </span>
-          <span>Our Story</span>
+          <span>Our Mission & Vission</span>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {cards.map((card, index) => (
             <motion.div
               key={index}

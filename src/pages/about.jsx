@@ -8,6 +8,7 @@ import AboutTimeline from "../components/about/timeline";
 import Footer from "../components/footer";
 import Navbar from "../components/navbar";
 import Newsletter from "../components/newsletter";
+import OurValues from '../components/about/values';
 
 export default function AboutUs() {
     return (
@@ -15,6 +16,7 @@ export default function AboutUs() {
         <Navbar />
         <AboutHero />
         <AboutMission />
+        <OurValues />
         <AboutTimeline />
         <AboutApproach />
         <AboutStats />
