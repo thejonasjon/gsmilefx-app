@@ -128,8 +128,9 @@ export default function Footer() {
               <li className="text-gray-400">47, Babalola Street,</li>
               <li className="text-gray-400">Lagos, Nigeria 100211</li>
               <li className="text-gray-400">info@gsmilefx.com</li>
-              <li className="text-gray-400">+234 703 825 0033</li>
-              <li className="text-gray-400">+234 704 064 5831</li>
+              <li className="text-gray-400">+44 774 881 8564 | +234 703 825 0033 | +234 704 064 5831 </li>
+              {/* <li className="text-gray-400">+234 703 825 0033</li>
+              <li className="text-gray-400">+234 704 064 5831</li> */}
             </ul>
           </div>
         </div>
@@ -137,15 +138,27 @@ export default function Footer() {
         <div className="mt-16 pt-8 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center">
           <p className="text-gray-400 text-sm">&copy; {new Date().getFullYear()} Gsmile Inc. All rights reserved.</p>
           <div className="flex space-x-6 mt-4 md:mt-0">
-            <Link to="#" className="text-gray-400 hover:text-green-500 transition-colors text-sm">
+            <a
+              href="src/assets/images/GsmileFX - Privacy Policy.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gray-400 hover:text-green-500 transition-colors text-sm">
               Privacy Policy
-            </Link>
-            <Link to="#" className="text-gray-400 hover:text-green-500 transition-colors text-sm">
+            </a>
+            <a
+              href="src/assets/images/GsmileFX - Terms of Service.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gray-400 hover:text-green-500 transition-colors text-sm">
               Terms of Service
-            </Link>
-            <Link to="#" className="text-gray-400 hover:text-green-500 transition-colors text-sm">
+            </a>
+            <a
+              href="src/assets/images/GsmileFX - Privacy Policy.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gray-400 hover:text-green-500 transition-colors text-sm">
               Cookie Policy
-            </Link>
+            </a>
           </div>
         </div>
 

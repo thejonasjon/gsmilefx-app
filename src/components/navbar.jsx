@@ -1,10 +1,9 @@
 import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 import { Button } from "../components/ui/button";
 
 import GsmileFLogo from '/logo/gsmile_logo_white.png'
-import { div } from "framer-motion/client";
 import AffilliatedLink from "./affiliated-link";
 
 export default function Navbar({activeClass}) {
@@ -55,55 +54,42 @@ export default function Navbar({activeClass}) {
                 : "opacity-0 invisible md:opacity-100 md:visible"
             }`}
           >
-            <Link
+            <NavLink
               to="/"
-              className="text-lg md:text-sm font-medium text-white hover:text-green-400 transition-colors relative group"
-            >
+              className={({ isActive }) =>
+                `text-lg md:text-sm font-medium transition-colors relative group ${
+                  isActive ? "text-green-400" : "text-white hover:text-green-400"
+                }`
+              }
+              >
               Home
               <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-green-500 transition-all duration-300 group-hover:w-full"></span>
-            </Link>
-            <Link
+            </NavLink>
+
+            <NavLink
               to="/about-us"
-              className="text-lg md:text-sm font-medium text-white hover:text-green-400 transition-colors relative group"
-            >
+              className={({ isActive }) =>
+                `text-lg md:text-sm font-medium transition-colors relative group ${
+                  isActive ? "text-green-400" : "text-white hover:text-green-400"
+                }`
+              }
+              >
               About Us
               <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-green-500 transition-all duration-300 group-hover:w-full"></span>
-            </Link>
-            <Link
+            </NavLink>
+
+            <NavLink
               to="/team"
-              className="text-lg md:text-sm font-medium text-white hover:text-green-400 transition-colors relative group"
-            >
+              className={({ isActive }) =>
+                `text-lg md:text-sm font-medium transition-colors relative group ${
+                  isActive ? "text-green-400" : "text-white hover:text-green-400"
+                }`
+              }
+              >
               Team
               <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-green-500 transition-all duration-300 group-hover:w-full"></span>
-            </Link>
-            {/* <Link
-              to="/#training"
-              className="text-lg md:text-sm font-medium text-white hover:text-green-400 transition-colors relative group"
-            >
-              Training
-              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-green-500 transition-all duration-300 group-hover:w-full"></span>
-            </Link>
-            <Link
-              to="/#mentorship"
-              className="text-lg md:text-sm font-medium text-white hover:text-green-400 transition-colors relative group"
-            >
-              Mentorship
-              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-green-500 transition-all duration-300 group-hover:w-full"></span>
-            </Link>
-            <Link
-              to="/#accountManagement"
-              className="text-lg md:text-sm font-medium text-white hover:text-green-400 transition-colors relative group"
-            >
-              Account Management
-              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-green-500 transition-all duration-300 group-hover:w-full"></span>
-            </Link>
-            <Link
-              to="/#pricing"
-              className="text-lg md:text-sm font-medium text-white hover:text-green-400 transition-colors relative group"
-            >
-              Pricing
-              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-green-500 transition-all duration-300 group-hover:w-full"></span>
-            </Link> */}
+            </NavLink>
+
             <Button
               className="mt-8 md:mt-0 bg-gradient-to-r from-green-500 to-green-700 hover:from-green-600 hover:to-green-800 text-white border-0 rounded-full"
               size="sm"

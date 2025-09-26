@@ -46,11 +46,14 @@ export default function TeamJoin() {
                 View Open Positions
                 <ChevronRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
               </Button>
-              <Button
-                className="border border-green-500/50 text-green-500 hover:bg-green-500/10 rounded-full px-8 h-14 text-lg font-medium"
+              <a
+                href="mailto:gsmilefx@gmail.com?subject=Support%20Request"
+                role="button"
+                aria-label="Send an email to support"
+                className="inline-flex items-center justify-center transition-colors duration-200 focus:outline-none cursor-pointer border border-green-500/50 text-green-500 hover:bg-green-500/10 rounded-full px-8 h-14 text-lg font-medium"
               >
                 Contact Support
-              </Button>
+              </a>
             </div>
           </div>
         </motion.div>

@@ -123,20 +123,22 @@ export default function Hero() {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
-              <Button
+              <a
+                href="https://docs.google.com/forms/d/e/1FAIpQLSf6aEhK9qb3ojpuM_vqUih3nnbeqC-X5QMCbfOEsevdyuEVbA/viewform?usp=header"
+                target="_blank"
                 size="lg"
-                className="bg-gradient-to-r from-green-500 to-green-700 hover:from-green-600 hover:to-green-800 text-white border-0 rounded-full px-8 h-14 text-lg font-medium group"
+                className="inline-flex items-center justify-center transition-colors duration-200 focus:outline-none cursor-pointer bg-gradient-to-r from-green-500 to-green-700 hover:from-green-600 hover:to-green-800 text-white border-0 rounded-full px-8 h-14 text-lg font-medium group"
               >
                 Start Trading
                 <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
-              </Button>
-              <Button
+              </a>
+              <a href="#training"
                 size="lg"
                 variant="outline"
-                className="bg-gradient-to-r from-gray-100 to-gray-300 hover:bg-transparent hover:from-transparent hover:to-transparent hover:border hover:border-green-500/50 text-green-500 hover:text-gray-100 rounded-full px-8 h-14 text-lg font-medium"
+                className="inline-flex items-center justify-center transition-colors duration-200 focus:outline-none cursor-pointer bg-gradient-to-r from-gray-100 to-gray-300 hover:bg-transparent hover:from-transparent hover:to-transparent hover:border hover:border-green-500/50 text-green-500 hover:text-gray-100 rounded-full px-8 h-14 text-lg font-medium"
               >
                 Explore Programs
-              </Button>
+              </a>
             </div>
 
             <div className="flex items-center justify-center md:justify-start space-x-8 pt-6">

@@ -152,7 +152,7 @@ export default function PricingPlans() {
             >
               Monthly
             </button>
-            <button
+            {/* <button
               onClick={() => setBillingPeriod("yearly")}
               className={`px-6 py-2 rounded-full text-sm font-medium transition-all duration-300 ${
                 billingPeriod === "yearly"
@@ -161,7 +161,7 @@ export default function PricingPlans() {
               }`}
             >
               Yearly <span className="text-green-500 font-bold">-20%</span>
-            </button>
+            </button> */}
           </motion.div>
         </div>
 
@@ -220,12 +220,14 @@ export default function PricingPlans() {
                     ))}
                   </ul>
 
-                  <Button
-                    className={`w-full bg-gradient-to-r ${plan.color} hover:brightness-110 text-white border-0 rounded-full group`}
+                  <a
+                    href="https://docs.google.com/forms/d/e/1FAIpQLSf6aEhK9qb3ojpuM_vqUih3nnbeqC-X5QMCbfOEsevdyuEVbA/viewform?usp=header"
+                    target="_blank"
+                    className={`w-full bg-gradient-to-r inline-flex items-center justify-center font-medium transition-colors duration-200 focus:outline-none px-3 h-9 cursor-pointer ${plan.color} hover:brightness-110 text-white border-0 rounded-full group`}
                   >
                     {plan.cta}
                     <ChevronRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
-                  </Button>
+                  </a>
                 </div>
               </div>
             </motion.div>

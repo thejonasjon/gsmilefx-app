@@ -191,12 +191,14 @@ export default function TrainingPrograms() {
                         <div className="text-sm text-gray-400">Program Goal</div>
                         <div className="text-xl font-bold text-green-500">{programs[activeTab].goal}</div>
                       </div>
-                      <Button
-                        className={`bg-gradient-to-r ${programs[activeTab].color} hover:brightness-110 text-white border-0 rounded-full px-6 group`}
+                      <a
+                        href="https://docs.google.com/forms/d/e/1FAIpQLSf6aEhK9qb3ojpuM_vqUih3nnbeqC-X5QMCbfOEsevdyuEVbA/viewform?usp=header"
+                        target="_blank"
+                        className={`bg-gradient-to-r ${programs[activeTab].color} inline-flex items-center justify-center font-medium transition-colors duration-200 focus:outline-none h-9 cursor-pointer hover:brightness-110 text-white border-0 rounded-full px-6 group`}
                       >
                         Enroll Now
                         <ChevronRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
-                      </Button>
+                      </a>
                     </div>
                   </div>
                 </div>
